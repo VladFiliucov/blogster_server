@@ -7,7 +7,7 @@ var posts = require('./data').posts;
 
 app.use(cors());
 
-app.get('/', function(req, res) {
+app.get('/posts', function(req, res) {
   res.json(posts);
 });
 
