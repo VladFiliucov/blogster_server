@@ -11,6 +11,12 @@ app.get('/posts', function(req, res) {
   res.json(posts);
 });
 
+app.get('/posts/:id', function(req, res) {
+  var postId = req.params.id
+  var result = posts.find(post => post.id == postId)
+  res.json(result);
+});
+
 app.listen(3000, function() {
   console.log("Listening to port 3000");
 })
