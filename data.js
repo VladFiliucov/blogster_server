@@ -1,4 +1,4 @@
-import moment from 'moment';
+var moment = require('moment');
 
 module.exports = {
   posts: [
