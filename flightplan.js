@@ -17,7 +17,6 @@ plan.local(function(local) {
 });
 
 plan.remote(function(remote) {
-  remote.exec('nvm use default');
   remote.log('Moving folder to web root');
   remote.exec('cp -R /tmp/' + tmpDir + ' ~');
   remote.rm('-rf /tmp/' + tmpDir);
