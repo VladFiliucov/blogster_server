@@ -7,7 +7,7 @@ var posts = require('./data').posts;
 
 app.use(cors());
 
-app.get('/posts/', function(req, res) {
+app.get('/posts', function(req, res) {
   if (req.query.search) {
     var searchTerm = req.query.search;
     var result = posts.filter(post => {
