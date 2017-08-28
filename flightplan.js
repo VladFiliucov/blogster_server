@@ -26,7 +26,7 @@ plan.remote(function(remote) {
 
   remote.log('Reload application');
   remote.exec('ln -snf ~/' + tmpDir + ' ~/blogster_server/current');
-  remote.exec('(cd ~/bloster_server/current && pm2 restart pm2.config.js --env production)');
+  remote.exec('(cd ~/blogster_server/current && pm2 restart pm2.config.js --env production)');
 
   remote.log('Deploy process completed.');
 });
