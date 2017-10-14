@@ -4,7 +4,8 @@
   "description": "REST API server for storing BlogPosts.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-prod": "NODE_ENV=production node ./index.js"
   },
   "author": "Vlad Filiucov",
   "license": "ISC",
@@ -12,5 +13,8 @@
     "cors": "^2.8.3",
     "express": "^4.15.3",
     "moment": "^2.18.1"
+  },
+  "devDependencies": {
+    "flightplan": "^0.6.17"
   }
 }
